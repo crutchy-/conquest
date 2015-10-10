@@ -1,0 +1,11 @@
+[Buildings]
+Tree Feller=2
+Sawmill=1
+Stonecutter=2
+Small House=1
+Small Store=1
+Fisherman=0
+
+[Resources]
+Settlers=10
+Trees=300

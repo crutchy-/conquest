@@ -1,0 +1,59 @@
+[Tree Feller]
+Availability=Infinite
+Construct=1,Settlers|100,Stone|200,Wood
+Recycle=1,Settlers|50,Stone|100,Wood
+ProductionRate=10,Trees
+ConsumptionRate=
+Capacity=80,Trees
+Requires=
+RecyclePermitted=Yes
+
+[Sawmill]
+Availability=Infinite
+Construct=1,Settlers|200,Stone|300,Wood
+Recycle=1,Settlers|100,Stone|150,Wood
+ProductionRate=10,Wood
+ConsumptionRate=10,Trees
+Capacity=80,Wood
+Requires=2,Tree Feller
+RecyclePermitted=Yes
+
+[Stonecutter]
+Availability=Infinite
+Construct=1,Settlers|320,Stone|240,Wood
+Recycle=1,Settlers|120,Stone|60,Wood
+ProductionRate=10,Stone
+ConsumptionRate=
+Capacity=80,Stone
+Requires=
+RecyclePermitted=Yes
+
+[Small House]
+Availability=Infinite
+Construct=400,Stone|300,Wood
+Recycle=200,Stone|100,Wood
+ProductionRate=0.8,Settlers
+ConsumptionRate=0.1,Food
+Capacity=10,Settlers
+Requires=
+RecyclePermitted=Yes
+
+[Small Store]
+Availability=Infinite
+Construct=2500,Stone|2500,Wood
+Recycle=1200,Stone|1000,Wood
+ProductionRate=
+ConsumptionRate=
+Capacity=98,Trees|5000,Wood|5000,Stone|5000,Food|5000,Meat|5000,Fish|5000,Water|5000,Corn|5000,Flour|5000,Bread|5000,Coal|5000,Iron Ore|5000,Iron|5000,Gold Ore|5000,Gold Bars|5000,Gold Coins|5000,Swords|5000,Bows
+Requires=
+RecyclePermitted=Yes
+
+[Fisherman]
+Availability=Infinite
+Construct=1,Settlers|150,Stone|200,Wood
+Recycle=1,Settlers|75,Stone|90,Wood
+ProductionRate=10,Fish
+ConsumptionRate=
+Capacity=100,Fish
+Requires=
+RecyclePermitted=Yes
