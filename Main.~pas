@@ -112,6 +112,14 @@ begin
     FImageBuffer.Canvas.MoveTo(0, P1.Y);
     FImageBuffer.Canvas.LineTo(FImageBuffer.Width, P1.Y);
   end;
+
+  P1 := ConvertNodeToPixelCoord(Round(FMouseDownCoordX / FSnapDistance) * FSnapDistance, Round(FMouseDownCoordY / FSnapDistance) * FSnapDistance);
+  FImageBuffer.Canvas.Ellipse(P1.X - 5, P1.Y - 5, P1.X + 6, P1.Y + 6);
+
+  ListBoxAvailableItems.Clear;
+  ListBoxAvailableItems.Items.Add(Format('%.3f', [Round(FMouseDownCoordX / FSnapDistance) * FSnapDistance]));
+  ListBoxAvailableItems.Items.Add(Format('%.3f', [Round(FMouseDownCoordY / FSnapDistance) * FSnapDistance]));
+
   ImageViewport.Canvas.Draw(0, 0, FImageBuffer);
 end;
 
@@ -237,12 +245,17 @@ begin
 end;
 
 procedure TFormMain.ImageViewportMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+var
+  i: Integer;
+  j: Integer;
 begin
   FMouseDownCoord := Classes.Point(X, Y);
   ConvertPixelToNodeCoord(Classes.Point(X, Y), FMouseDownCoordX, FMouseDownCoordY);
   if ssLeft in Shift then
   begin
-
+    i := Round(FMouseDownCoordX);
+    j := Round(FMouseDownCoordX);
+    
   end;
   RepaintViewport;
 end;

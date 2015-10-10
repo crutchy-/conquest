@@ -2,8 +2,7 @@ program Conquest;
 
 uses
   Forms,
-  Main in 'Main.pas' {FormMain},
-  GameClasses in 'GameClasses.pas';
+  Main in 'Main.pas' {FormMain};
 
 {$R *.res}
 
