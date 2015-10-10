@@ -242,7 +242,7 @@ begin
   ConvertPixelToNodeCoord(Classes.Point(X, Y), FMouseDownCoordX, FMouseDownCoordY);
   if ssLeft in Shift then
   begin
-    //P1 := ConvertNodeToPixelCoord((Round(FViewportMinX / FSnapDistance) + i) * FSnapDistance, 0);
+
   end;
   RepaintViewport;
 end;
